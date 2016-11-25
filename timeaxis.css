@@ -1,0 +1,58 @@
+﻿body {
+  /* 取消评论此选项以启用滚动和缩放操作
+  触摸操作: 操作；
+  */
+}
+/*DIV滚动屏幕*/
+.timeaxis{
+    border:thin;
+    width:1000px;
+    position:absolute;
+    top:70%;
+    left:15%;
+    bottom:20%;
+    height:250px;
+    overflow:hidden;
+   
+    
+
+}
+
+.timepoint{
+    
+    width:100px;
+    height:auto;
+    color:darkblue;
+    top:40%;
+  
+    font-size:small;
+    position:absolute;
+   
+}
+ .timepoint:hover {
+     transition: transform 0.5s,background-color linear 1s;
+     transform:scale(1.25,1.25);
+     height:auto;
+    }
+ 
+ .canbox{
+    
+     position:absolute;
+     
+     top:60%;
+     left:0;
+
+ }
+ .picscale{
+    width:100px;
+    height:auto;
+    color:darkblue;
+    font-size:small;
+    position:absolute;
+    animation:throw 3s ease 1 forwards;
+}
+ @keyframes throw{
+     from {top:65%;height:100px;width:100px}
+     to {top:35%;left:45%;transform:scale(2,2)}
+
+ }
